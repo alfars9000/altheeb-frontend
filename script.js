@@ -28,7 +28,6 @@ async function generateVideo() {
             document.getElementById("result").innerText = "حدث خطأ أثناء التوليد.";
         }
     } catch (error) {
-        console.error(error);
         document.getElementById("result").innerText = "تعذر الاتصال بالخادم.";
     }
 }
