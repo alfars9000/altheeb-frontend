@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ALTHEEB AI VIDEO</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #111;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            border: none;
+        }
+        button {
+            background: #ffcc00;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        pre {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ALTHEEB AI VIDEO</h1>
+    <p>مولد نصوص الفيديو بالذكاء الاصطناعي</p>
+
+    <input id="duration" type="number" placeholder="مدة الفيديو بالدقائق">
+    <br>
+
+    <select id="language">
+        <option value="العربية">العربية</option>
+        <option value="الإنجليزية">الإنجليزية</option>
+    </select>
+    <br>
+
+    <select id="contentType">
+        <option value="تعليمي">تعليمي</option>
+        <option value="تسويقي">تسويقي</option>
+        <option value="ترفيهي">ترفيهي</option>
+        <option value="تحفيزي">تحفيزي</option>
+    </select>
+    <br>
+
+    <select id="voiceTone">
+        <option value="هادئ">هادئ</option>
+        <option value="حماسي">حماسي</option>
+        <option value="رسمي">رسمي</option>
+        <option value="ودود">ودود</option>
+    </select>
+    <br>
+
+    <button onclick="generateVideo()">توليد النص</button>
+
+    <h2>الناتج:</h2>
+    <pre id="result"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
